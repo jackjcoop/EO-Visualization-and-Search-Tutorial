@@ -1,8 +1,8 @@
 <p align="center">
-    <a href="https://www.asc-csa.gc.ca/eng/satellites/radarsat/">
-        <img alt="Image du RADARSAT-1 | Image of RADARSAT-1" src="https://www.asc-csa.gc.ca/images/recherche/tiles/radarsat_1_hr.jpg" height="300">
-        </a>
+   <img src="https://www.asc-csa.gc.ca/images/recherche/tiles/radarsat_1_hr.jpgÈ alt="Radarsat" height=300> 
+   <br> Crédit d'image | Image credit: <a href=https://www.asc-csa.gc.ca/images/recherche/tiles>ASC-CSA</a>
 </p>
+
 
 <p align="center">
     <a href="#stars">
@@ -22,12 +22,23 @@
     </a>
 </p>
 
-- [En Français](#visualisation-et-la-recherche-dimages-ot-tutoriel)
-- [In English](#EO-Visualization-and-Search-Tutorial)
+<h2 align="center">
+  <a href="#titre-du-projet">Français</a> |
+  <a href="#project-title">English (follows)</a>
+</h2>
 
-# Visualisation-et-la-Recherche-d'Images-OT-Tutoriel
+<!-- ============ FRANÇAIS ============ 
+An engaging title for the project (required)-->
+<a id="titre-du-projet"></a>
+# Visualisation-et-la-Recherche-d'Images-Tutoriel
 
-## Contexte
+<!-- A short summary phrase for the project (required)-->
+> **Description brève :**
+> Ce tutoriel initie les utilisateurs à l’exploration des vastes données RADARSAT-1 et RCM en utilisant l’API REST du SGDOT pour rechercher et visualiser des images satellites sur une carte interactive.
+
+---
+
+## À propos
 
 RADARSAT-1 a fourni au Canada et au monde entier une plateforme avancée de radar à synthèse d'ouverture (SAR) capable d'acquérir des images de la Terre.<br>
 
@@ -41,19 +52,50 @@ Par conséquent, ce tutoriel vise à faire découvrir aux lecteurs ces vastes do
 
 ## Démarrage rapide
 
-#### Remarque: 
-Si après les étapes ci-dessous vous ne parvenez pas à afficher les widgets associés ou la carte ipyleaflet, il peut être nécessaire d'exécuter et/ou d'installer jupyter notebook dans le même noyau qui possède les paquets requis. 
+1. 📦 **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/asc-csa/EO-Visualization-and-Search-Tutorial.git
+   cd EO-Visualization-and-Search-Tutorial
+   ```
+2. 🐍 **Créer un environnement**
+   ```bash
+   # Avec virtualenv
+   python -m venv env
+   source env/bin/activate
 
-1.	Configurez un environnement virtuel ou un environnement conda avec la version suivante de python (si vous utilisez conda, remplacez le pip install ci-dessous avec conda) 
-```
-python = 3.11
-```
-2. Installer les conditions requises à partir du fichier requirments.txt
-```
-pip install -r requirements.txt
-```
+   # Ou avec conda
+   conda create -n rad_env python=3.11
+   conda activate rad_env
+   ```
+3. 📥 **Installer les dépendances**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. 🚀 **Lancer le tutoriel**
+   ```bash
+   jupyter notebook Visualisation et la Recherche d'Images OT Tutoriel - FR.ipynb.ipynb
+   ```
+> **Remarque :** Si les graphiques ou cartes ne s’affichent pas, redémarrez Jupyter Notebook ou ajoutez `%matplotlib inline` dans la première cellule.
 
+## Licence
+
+Ce projet est  sous une licence MIT modifiée – voir le fichier [LICENSE](https://github.com/asc-csa/EO-Visualization-and-Search-Tutorial/blob/main/LICENSE.txt) pour plus de détails.
+
+---
+
+<h2 align="center">
+  <a href="#project-title">English </a> |
+  <a href="#titre-du-projet">Français (précède)</a>
+</h2>
+
+<!-- ============ English ============ 
+An engaging title for the project (required)-->
+<a id="project-title"></a>
 # EO-Visualization-and-Search-Tutorial
+
+<!-- A short summary phrase for the project (required)-->
+> **Brief description:**
+> This tutorial introduces users to exploring the extensive RADARSAT-1 and RCM data using the EODMS REST API to search and display satellite imagery on an interactive map.
 
 ## About
 
@@ -70,15 +112,31 @@ Therefore, this tutorial will look to engage readers with this vast data through
 
 ## Quick Start
 
-#### Note:
-If after the below steps you are unable to display either the associated widgets or ipyleaflet map, it may be required to run and/or install jupyter notebook into the same kernel that has the required packages. 
+1. 📦 **Clone the repo**
+   ```bash
+   git clone https://github.com/asc-csa/EO-Visualization-and-Search-Tutorial.git
+   cd EO-Visualization-and-Search-Tutorial
+   ```
+2. 🐍 **Create environment**
+   ```bash
+   # Using virtualenv
+   python -m venv env
+   source env/bin/activate
 
-1.	Setup a virtual environment or conda environment with the following version of python (if using conda replace the below pip install with conda) 
-```
-python = 3.11
-```
-2.  Install requirements from the requirments.txt file 
-```
-pip install -r requirements.txt
-```
+   # Or using conda
+   conda create -n rad_env python=3.11
+   conda activate rad_env
+   ```
+3. 📥 **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. 🚀 **Run the tutorial**
+   ```bash
+   jupyter notebook EO Visualization and Search Tutorial - EN.ipynb
+   ```
+> **Note:** If plots or maps do not display, restart Jupyter Notebook or run `%matplotlib inline` in the first cell.
 
+## License
+
+This project is licensed under a modified MIT license - see the [LICENSE](https://github.com/asc-csa/EO-Visualization-and-Search-Tutorial/blob/main/LICENSE.txt) file for details.
