@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://www.asc-csa.gc.ca/images/recherche/tiles/radarsat_1_hr.jpgÈ alt="Radarsat" height=300> 
+   <img src="https://www.asc-csa.gc.ca/images/recherche/tiles/radarsat_1_hr.jpg" alt="Radarsat" height=300> 
    <br> Crédit d'image | Image credit: <a href=https://www.asc-csa.gc.ca/images/recherche/tiles>ASC-CSA</a>
 </p>
 
